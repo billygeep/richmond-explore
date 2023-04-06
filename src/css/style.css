@@ -1,0 +1,479 @@
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff"),
+    url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+.small-mobile {
+  display: none;
+}
+
+.color-pink {
+  color: #fdc5ac;
+}
+.color-green {
+  color: #224135;
+}
+
+.bg-pink {
+  background-color: #fdc5ac;
+}
+.bg-grey {
+  background-color: #edeae7;
+}
+.bg-green {
+  background-color: #224135;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #edeae7;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "Satoshi-Regular", sans-serif;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+}
+.content-container .container {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
+
+.content-intro {
+  height: 100vh;
+}
+
+.logo-container {
+  height: 139px;
+  width: auto;
+  margin-top: 80px;
+}
+.logo-container img {
+  width: auto;
+  height: 100%;
+}
+.intro-image {
+  top: 0;
+  position: absolute;
+  width: 65%;
+  right: 0;
+  height: calc(100vh - 80px);
+  background-image: url(../imgs/hero_shot.jpg);
+  background-size: cover;
+  background-position: left;
+}
+.intro-text-container {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+.intro-text-container p {
+  font-family: "Satoshi-Medium", sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 29px;
+  color: #27574e;
+  letter-spacing: 0.06em;
+}
+
+#intro-image {
+  opacity: 0;
+}
+#intro-logo {
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  z-index: 2;
+}
+#intro-text {
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  z-index: 2;
+}
+
+.section-main {
+  position: relative;
+  padding: 160px 0;
+  z-index: 2;
+}
+
+.section-main img {
+  width: 100%;
+  height: auto;
+}
+
+.section-main-headline {
+  font-family: "Satoshi-Medium", sans-serif;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 46px;
+  letter-spacing: 0.025em;
+  margin-bottom: 210px;
+}
+.section-main-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  margin-top: 200px;
+}
+
+.arrow-parent {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  background-size: 100% 100%;
+}
+
+#down-arrow {
+  width: 580px;
+  height: 574px;
+  left: -250px;
+  background-image: url(../imgs/downarrow.png);
+  transform: translateY(-200vh);
+}
+
+#right-arrow {
+  width: 612px;
+  height: 300px;
+  bottom: -65px;
+  left: -700px;
+  background-image: url(../imgs/rightarrow.png);
+}
+#up-arrow {
+  width: 195px;
+  height: 522px;
+  right: 12px;
+  top: 110px;
+  background-image: url(../imgs/uparrow.png);
+}
+
+.button-label {
+  display: inline-block;
+  font-size: 19px;
+  color: #224135;
+  text-decoration: underline;
+  letter-spacing: 0.05em;
+}
+.button-download {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: auto;
+  width: 193px;
+  background-color: transparent;
+  color: #224135;
+  border: 1px solid #224135;
+  border-radius: 30px;
+  opacity: 1;
+  letter-spacing: 0.05em;
+  margin-left: 80px;
+  font-size: 19px;
+  line-height: 27px;
+  padding: 6px 0 7px;
+  transition: 0.4s;
+}
+.button-download:link,
+.button-download:active,
+.button-download:visited {
+  text-decoration: none;
+  color: #224135;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-band {
+  width: 100%;
+}
+.footer-top {
+  position: relative;
+  padding: 110px 0;
+}
+.footer-mid {
+  position: relative;
+  z-index: 1;
+  padding: 110px 0 130px;
+  overflow: hidden;
+}
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0 60px;
+}
+.footer-titles {
+  margin-bottom: 111px;
+}
+
+.footer-title {
+  text-align: right;
+  color: #224135;
+  font-size: 36px;
+  font-family: "Satoshi-Medium", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.025em;
+}
+.footer-title a {
+  border: 0;
+}
+.footer-detail {
+  font-family: "Satoshi-Regular", sans-serif;
+  font-style: normal;
+  color: #224135;
+  font-size: 20px;
+  line-height: 26px;
+}
+.footer-detail a:visited,
+.footer-detail a {
+  text-decoration: none;
+  color: #224135;
+  transition: 0.2s;
+}
+.footer-name {
+  text-transform: uppercase;
+  line-height: 32px;
+  font-family: "Satoshi-Medium", sans-serif;
+}
+.footer-credit {
+  font-family: "Satoshi-Regular", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.footer-credit a:visited,
+.footer-credit a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.footer-icon-fox {
+  height: 100px;
+  width: auto;
+  margin: 0 0 44px;
+}
+.footer-icon-savills {
+  height: 100px;
+  width: auto;
+  margin: 0px 0 44px;
+}
+.footer-legals {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+@media (max-width: 1399.98px) {
+  /* .intro-text h2 {
+        font-size: 38px;
+    }
+    .floorplan-button {
+        font-size: 28px;
+        padding: 6px 24px;
+        line-height: 38px;
+    }
+    .floorplan-button-container .divide {
+        margin: 7px 0;
+        width: calc(100% - 48px);
+        margin-left: 24px;
+    }
+    .floorplan-button-a {
+        width: 15%;
+    }
+    .floorplan-button-b {
+        width: 25%;
+    } */
+}
+
+@media (max-width: 1199.98px) {
+  .footer-top .row {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .button-download {
+    margin-left: 60px;
+  }
+  .logo-container {
+    height: 94px;
+  }
+
+  .section-main-headline {
+    margin: 40px 0;
+    text-align: center;
+  }
+  .section-main-description {
+    margin: 40px 0 0;
+    width: 80%;
+  }
+  #right-arrow {
+    width: 409;
+    height: 200px;
+    bottom: -40px;
+    left: -1200px;
+    background-image: url(../imgs/rightarrow.png);
+  }
+  .footer-icon-savills {
+    margin-top: 44px;
+  }
+  .footer-title {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  .footer-top {
+    padding: 80px 0;
+  }
+  .footer-mid {
+    padding: 80px 0 100px;
+  }
+  .footer-bottom {
+    padding: 40px 0 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .button-label {
+    font-size: 16px;
+  }
+  .button-download {
+    margin-left: 40px;
+    font-size: 16px;
+    width: 160px;
+  }
+  .footer-top {
+    padding: 80px 0;
+  }
+  .logo-container {
+    height: 80px;
+    margin-top: 20px;
+  }
+  .intro-text-container {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    transform: translate3d(0, 0%, 0);
+  }
+  .intro-text-container p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .intro-image {
+    top: 120px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    height: calc(100% - 240px);
+    background-position: 15%;
+  }
+  #down-arrow {
+    width: 320px;
+    height: 317px;
+    left: -200px;
+  }
+  .section-main {
+    padding: 120px 0 100px;
+  }
+  #up-arrow,
+  #right-arrow {
+    display: none;
+  }
+  .content-intro {
+    height: calc(100vh - 74px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-main-description {
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .button-label {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .button-download {
+    display: block;
+    margin: 15px auto 0;
+    font-size: 19px;
+    width: 193px;
+  }
+  .section-main-headline {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .intro-text-container p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 389.99px) {
+  .section-main-headline {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .intro-text-container p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .small-mobile {
+    display: block;
+  }
+}
+
+@media (hover: hover) {
+  .footer-credit a:hover,
+  .footer-detail a:hover {
+    color: #fdc5ac;
+  }
+  .button-download:hover {
+    background-color: rgba(253, 197, 172, 0.4);
+  }
+}
